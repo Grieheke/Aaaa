@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>تطبيق جوائز سيرفر AZC</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جوائز سيرفر AZC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- صفحة تسجيل الدخول -->
+    <div id="loginPage">
+        <h2>🎁 تسجيل الدخول للحصول على الجوائز</h2>
+        <input type="text" id="discordName" placeholder="ضع اسم حسابك في ديسكورد" required>
+        <input type="number" id="age" placeholder="أدخل عمرك" required>
+        <select id="country">
+            <option value="" disabled selected>اختر دولتك</option>
+            <option value="السعودية">السعودية</option>
+            <option value="الإمارات">الإمارات</option>
+            <option value="مصر">مصر</option>
+            <option value="العراق">العراق</option>
+            <option value="المغرب">المغرب</option>
+            <option value="دولة أخرى">دولة أخرى</option>
+        </select>
+        <button id="loginBtn">🔴 سجل دخول</button>
+    </div>
+
+    <!-- صفحة الجوائز (مخفية حتى يتم تسجيل الدخول) -->
+    <div id="rewardsPage" class="hidden">
+        <h2>🏆 الجوائز المتاحة</h2>
+        <ul>
+            <li>🎓 شهادة أبل <button class="sendBtn">✅ أرسل</button></li>
+            <li>📢 إعلان ديسكورد مجاني <button class="sendBtn">✅ أرسل</button></li>
+            <li>💰 1,000,000 كردت <button class="sendBtn">✅ أرسل</button></li>
+            <li>💎 2,000,000 كردت <button class="sendBtn">✅ أرسل</button></li>
+            <li>🎁 شيء مجهول <button class="sendBtn">✅ أرسل</button></li>
+        </ul>
+
+        <!-- رابط سيرفر الديسكورد -->
+        <div id="discordServer">
+            <p>🔗 سيرفرنا الديسكورد: <a href="https://discord.gg/azc" target="_blank">اضغط هنا للانضمام</a></p>
+            <p>📢 للحصول على الجائزة، عليك دعوة 10 أشخاص إلى السيرفر!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
